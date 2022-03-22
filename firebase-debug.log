@@ -1,0 +1,63 @@
+[debug] [2022-03-22T08:22:31.395Z] ----------------------------------------------------------------------
+[debug] [2022-03-22T08:22:31.395Z] Command:       /usr/local/bin/node /usr/local/bin/firebase serve --port=9000
+[debug] [2022-03-22T08:22:31.396Z] CLI Version:   10.4.1
+[debug] [2022-03-22T08:22:31.396Z] Platform:      darwin
+[debug] [2022-03-22T08:22:31.396Z] Node Version:  v16.14.0
+[debug] [2022-03-22T08:22:31.396Z] Time:          Tue Mar 22 2022 16:22:31 GMT+0800 (대만 표준시)
+[debug] [2022-03-22T08:22:31.397Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-03-22T08:22:31.423Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-03-22T08:22:31.423Z] > authorizing via signed-in user (ejrbdi@gmail.com)
+[debug] [2022-03-22T08:22:31.423Z] [iam] checking project dangdang-bf6c7 for permissions ["firebase.projects.get"]
+[debug] [2022-03-22T08:22:31.424Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/dangdang-bf6c7:testIamPermissions [none]
+[debug] [2022-03-22T08:22:31.424Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/dangdang-bf6c7:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2022-03-22T08:22:32.311Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/dangdang-bf6c7:testIamPermissions 200
+[debug] [2022-03-22T08:22:32.312Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/dangdang-bf6c7:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2022-03-22T08:22:32.313Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/dangdang-bf6c7 [none]
+[debug] [2022-03-22T08:22:33.019Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/dangdang-bf6c7 200
+[debug] [2022-03-22T08:22:33.019Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/dangdang-bf6c7 {"projectId":"dangdang-bf6c7","projectNumber":"51804947188","displayName":"DangDang","name":"projects/dangdang-bf6c7","resources":{"hostingSite":"dangdang-bf6c7","storageBucket":"dangdang-bf6c7.appspot.com","locationId":"asia-northeast3"},"state":"ACTIVE"}
+[info] 
+[info] === Serving from '/Users/ydk1204/Desktop/projects/my_page/mypage'...
+[info] 
+[debug] [2022-03-22T08:22:33.022Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/dangdang-bf6c7/sites 
+[debug] [2022-03-22T08:22:34.658Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/dangdang-bf6c7/sites 200
+[debug] [2022-03-22T08:22:34.659Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/dangdang-bf6c7/sites {"sites":[{"name":"projects/51804947188/sites/dangdang-bf6c7","defaultUrl":"https://dangdang-bf6c7.web.app","type":"DEFAULT_SITE"}]}
+[debug] [2022-03-22T08:22:34.659Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/dangdang-bf6c7/webApps/-/config [none]
+[debug] [2022-03-22T08:22:36.090Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/dangdang-bf6c7/webApps/-/config 200
+[debug] [2022-03-22T08:22:36.090Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/dangdang-bf6c7/webApps/-/config {"projectId":"dangdang-bf6c7","appId":"1:51804947188:web:63190f01da6113a20514a1","storageBucket":"dangdang-bf6c7.appspot.com","locationId":"asia-northeast3","apiKey":"AIzaSyCIsk3fzKcbD_17GykpKtvWlgyTOJZc-3o","authDomain":"dangdang-bf6c7.firebaseapp.com","messagingSenderId":"51804947188","measurementId":"G-4C9QRJ0970"}
+[info] i  hosting: Serving hosting files from: build {"metadata":{"emulator":{"name":"hosting"},"message":"Serving hosting files from: \u001b[1mbuild\u001b[22m"}}
+[info] ✔  hosting: Local server: http://localhost:9000 {"metadata":{"emulator":{"name":"hosting"},"message":"Local server: \u001b[4m\u001b[1mhttp://localhost:9000\u001b[22m\u001b[24m"}}
+[info] i  hosting: 127.0.0.1 - - [22/Mar/2022:08:22:39 +0000] "GET / HTTP/1.1" 200 4596 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.83 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [22/Mar/2022:08:22:39 +0000] \"GET / HTTP/1.1\" 200 4596 \"-\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.83 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [22/Mar/2022:08:22:39 +0000] "GET /__/firebase/init.js?useEmulator=true HTTP/1.1" 200 - "http://localhost:9000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.83 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [22/Mar/2022:08:22:39 +0000] \"GET /__/firebase/init.js?useEmulator=true HTTP/1.1\" 200 - \"http://localhost:9000/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.83 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [22/Mar/2022:08:25:49 +0000] "GET / HTTP/1.1" 200 4596 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.83 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [22/Mar/2022:08:25:49 +0000] \"GET / HTTP/1.1\" 200 4596 \"-\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.83 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [22/Mar/2022:08:25:49 +0000] "GET /__/firebase/init.js?useEmulator=true HTTP/1.1" 200 - "http://localhost:9000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.83 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [22/Mar/2022:08:25:49 +0000] \"GET /__/firebase/init.js?useEmulator=true HTTP/1.1\" 200 - \"http://localhost:9000/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.83 Safari/537.36\""}}
+[debug] [2022-03-22T08:26:05.416Z] ----------------------------------------------------------------------
+[debug] [2022-03-22T08:26:05.417Z] Command:       /usr/local/bin/node /usr/local/bin/firebase serve --port=9000
+[debug] [2022-03-22T08:26:05.417Z] CLI Version:   10.4.1
+[debug] [2022-03-22T08:26:05.417Z] Platform:      darwin
+[debug] [2022-03-22T08:26:05.417Z] Node Version:  v16.14.0
+[debug] [2022-03-22T08:26:05.418Z] Time:          Tue Mar 22 2022 16:26:05 GMT+0800 (대만 표준시)
+[debug] [2022-03-22T08:26:05.418Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-03-22T08:26:05.446Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-03-22T08:26:05.446Z] > authorizing via signed-in user (ejrbdi@gmail.com)
+[debug] [2022-03-22T08:26:05.446Z] [iam] checking project dangdang-bf6c7 for permissions ["firebase.projects.get"]
+[debug] [2022-03-22T08:26:05.447Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/dangdang-bf6c7:testIamPermissions [none]
+[debug] [2022-03-22T08:26:05.447Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/dangdang-bf6c7:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2022-03-22T08:26:06.236Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/dangdang-bf6c7:testIamPermissions 200
+[debug] [2022-03-22T08:26:06.236Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/dangdang-bf6c7:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2022-03-22T08:26:06.238Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/dangdang-bf6c7 [none]
+[debug] [2022-03-22T08:26:06.737Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/dangdang-bf6c7 200
+[debug] [2022-03-22T08:26:06.738Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/dangdang-bf6c7 {"projectId":"dangdang-bf6c7","projectNumber":"51804947188","displayName":"DangDang","name":"projects/dangdang-bf6c7","resources":{"hostingSite":"dangdang-bf6c7","storageBucket":"dangdang-bf6c7.appspot.com","locationId":"asia-northeast3"},"state":"ACTIVE"}
+[info] 
+[info] === Serving from '/Users/ydk1204/Desktop/projects/my_page/mypage'...
+[info] 
+[debug] [2022-03-22T08:26:06.740Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/dangdang-bf6c7/sites 
+[debug] [2022-03-22T08:26:07.821Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/dangdang-bf6c7/sites 200
+[debug] [2022-03-22T08:26:07.821Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/dangdang-bf6c7/sites {"sites":[{"name":"projects/51804947188/sites/dangdang-bf6c7","defaultUrl":"https://dangdang-bf6c7.web.app","type":"DEFAULT_SITE"}]}
+[debug] [2022-03-22T08:26:07.821Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/dangdang-bf6c7/webApps/-/config [none]
+[debug] [2022-03-22T08:26:09.092Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/dangdang-bf6c7/webApps/-/config 200
+[debug] [2022-03-22T08:26:09.092Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/dangdang-bf6c7/webApps/-/config {"projectId":"dangdang-bf6c7","appId":"1:51804947188:web:63190f01da6113a20514a1","storageBucket":"dangdang-bf6c7.appspot.com","locationId":"asia-northeast3","apiKey":"AIzaSyCIsk3fzKcbD_17GykpKtvWlgyTOJZc-3o","authDomain":"dangdang-bf6c7.firebaseapp.com","messagingSenderId":"51804947188","measurementId":"G-4C9QRJ0970"}
+[info] i  hosting: Serving hosting files from: build {"metadata":{"emulator":{"name":"hosting"},"message":"Serving hosting files from: \u001b[1mbuild\u001b[22m"}}
+[info] ✔  hosting: Local server: http://localhost:9000 {"metadata":{"emulator":{"name":"hosting"},"message":"Local server: \u001b[4m\u001b[1mhttp://localhost:9000\u001b[22m\u001b[24m"}}
+[info] i  hosting: 127.0.0.1 - - [22/Mar/2022:08:26:11 +0000] "GET /__/firebase/init.js?useEmulator=true HTTP/1.1" 200 - "http://localhost:9000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.83 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [22/Mar/2022:08:26:11 +0000] \"GET /__/firebase/init.js?useEmulator=true HTTP/1.1\" 200 - \"http://localhost:9000/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.83 Safari/537.36\""}}

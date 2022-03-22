@@ -1,0 +1,29 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // match /{document=**} {
+    //   allow read: if true;
+    //   allow write: if true;
+    // }
+    match /user/{docid} {
+    	allow read, write : if true;
+    }
+    
+    function checkAdmin() {
+    	return get(/databases/$(database)/documents/user/$(request.auth.uid)).data.role == 'admin';
+    }
+    
+    match /product/{docid} {
+    	allow read : if true;
+      allow create : if true
+      && request.resource.data.keys().hasOnly(['유저', '제목, 내용', '가격', '날짜', '이미지', 'uid']);
+      allow update : if request.auth.uid == resource.data.uid || checkAdmin();
+    }
+    match /chatroom/{docid} {
+    	allow read, write : if true;
+    }
+    match /chatroom/{docid}/messages/{docid2} {
+    	allow read, write : if true;
+    }
+  }
+}
