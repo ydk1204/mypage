@@ -1,10 +1,10 @@
-
-import './App.css';
+import "./App.css";
+import Hompage from "./pages/Hompage";
 
 function App() {
   return (
     <div className="App">
-      <h1>안녕하세요</h1>
+      <Hompage />
     </div>
   );
 }

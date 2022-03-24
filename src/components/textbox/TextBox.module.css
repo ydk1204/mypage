@@ -1,0 +1,33 @@
+.textList {
+  height: 405vh;
+  top: -100vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  background: rgba(0, 0, 0, 0.5);
+  transition: all 450ms ease-in-out;
+}
+
+.introText {
+  font-size: var(--font-large);
+  text-align: center;
+  font-weight: var(--weight-bold);
+  margin-bottom: 3em;
+  color: white;
+  opacity: 0;
+  transition: all 450ms ease-in-out;
+}
+
+.videoBackground {
+  height: 400vh;
+}
+
+.container {
+  height: 405vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
