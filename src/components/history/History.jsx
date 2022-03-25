@@ -1,12 +1,9 @@
 import React, { useEffect, useState } from "react";
 import styles from "./History.module.css";
 import ImgCard from "../imgCard/ImgCard";
+import AddMent from "../addMent/AddMent";
 
 const History = (props) => {
-  const [rotate, setRotate] = useState(0);
-  const [scale, setScale] = useState(1);
-  const [xtranslate, setXtranslate] = useState(0);
-  const [ytranslate, setYtranslate] = useState(0);
   const [cent, setCent] = useState(0);
 
   useEffect(() => {
@@ -15,7 +12,6 @@ const History = (props) => {
     const moveContents = () => {
       const recScroll = window.scrollY - rootLine.offsetTop;
       const procent = recScroll / rootLine.scrollHeight;
-      moving(procent);
       setCent(procent);
     };
 
@@ -36,20 +32,10 @@ const History = (props) => {
     }, options);
 
     observer.observe(rootLine);
+
+    return;
   }, []);
 
-  const moving = (procent) => {
-    let newRotate = rotate + procent * 100;
-    setRotate(newRotate);
-    let newScale = scale + procent;
-    setScale(newScale);
-    let newXtranslate = xtranslate + procent * 550;
-    setXtranslate(newXtranslate);
-    let newYtranslate = ytranslate + procent * 200;
-    setYtranslate(newYtranslate);
-  };
-
-  console.log(rotate, scale, xtranslate, ytranslate);
   return (
     <>
       <div className={styles.history}>
@@ -111,6 +97,9 @@ const History = (props) => {
               ytrans={50}
             />
           </div>
+        </div>
+        <div className={styles.addMent}>
+          <AddMent />
         </div>
       </div>
     </>

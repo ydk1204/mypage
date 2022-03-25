@@ -16,10 +16,6 @@ const ImgCard = ({
   const [xtranslate, setXtranslate] = useState(0);
   const [ytranslate, setYtranslate] = useState(0);
 
-  useEffect(() => {
-    movings(procent);
-  }, [procent]);
-
   const movings = (procent) => {
     let newRotate = procent * rotateNum;
     setRotate(newRotate);
@@ -31,7 +27,11 @@ const ImgCard = ({
     setYtranslate(newYtranslate);
   };
 
-  console.log(rotate, scale, xtranslate, ytranslate);
+  useEffect(() => {
+    movings(procent);
+    return;
+  }, [procent]);
+
   return (
     <>
       <div
