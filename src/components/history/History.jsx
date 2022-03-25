@@ -75,34 +75,41 @@ const History = (props) => {
               top={"3em"}
               right={"40em"}
               procent={cent}
+              rotateNum={100}
+              scaleNum={0.7}
+              xtrans={550}
+              ytrans={200}
             />
-            {/* <ImgCard
+            <ImgCard
               img={"./img/teamRpg.jpeg"}
               top={"5em"}
-              right={"30em"}
-              rotate={rotate}
-              scale={scale}
-              xtranslate={xtranslate}
-              ytranslate={ytranslate}
+              right={"25em"}
+              procent={cent}
+              rotateNum={70}
+              scaleNum={0.8}
+              xtrans={500}
+              ytrans={150}
             />
             <ImgCard
               img={"./img/rpg.jpeg"}
               top={"7em"}
-              right={"20em"}
-              rotate={rotate}
-              scale={scale}
-              xtranslate={xtranslate}
-              ytranslate={ytranslate}
+              right={"5em"}
+              procent={cent}
+              rotateNum={40}
+              scaleNum={0.9}
+              xtrans={450}
+              ytrans={100}
             />
             <ImgCard
               img={"./img/teamRun.jpeg"}
               top={"9em"}
-              right={"10em"}
-              rotate={rotate}
-              scale={scale}
-              xtranslate={xtranslate}
-              ytranslate={ytranslate}
-            /> */}
+              right={"-15em"}
+              procent={cent}
+              rotateNum={30}
+              scaleNum={1}
+              xtrans={400}
+              ytrans={50}
+            />
           </div>
         </div>
       </div>

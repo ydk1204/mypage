@@ -1,7 +1,16 @@
 import React, { useState, useEffect } from "react";
 import styles from "../history/History.module.css";
 
-const ImgCard = ({ procent, img, top, right }) => {
+const ImgCard = ({
+  procent,
+  img,
+  top,
+  right,
+  rotateNum,
+  scaleNum,
+  xtrans,
+  ytrans,
+}) => {
   const [rotate, setRotate] = useState(0);
   const [scale, setScale] = useState(1);
   const [xtranslate, setXtranslate] = useState(0);
@@ -12,13 +21,13 @@ const ImgCard = ({ procent, img, top, right }) => {
   }, [procent]);
 
   const movings = (procent) => {
-    let newRotate = procent * 100;
+    let newRotate = procent * rotateNum;
     setRotate(newRotate);
     let newScale = procent;
-    setScale(newScale + 1);
-    let newXtranslate = procent * 550;
+    setScale(newScale + scaleNum);
+    let newXtranslate = procent * xtrans;
     setXtranslate(newXtranslate);
-    let newYtranslate = procent * 200;
+    let newYtranslate = procent * ytrans;
     setYtranslate(newYtranslate);
   };
 
