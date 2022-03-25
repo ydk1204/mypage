@@ -39,25 +39,22 @@ const TextBox = (props) => {
     <>
       <div className={styles.videoBackground}>
         <VideoBackground />
-
-        <div className={styles.container}>
-          <div className={`${styles.textList} listBox`}>
-            <p className={`${styles.introText} box`}>이 웹페이지로</p>
-            <p className={`${styles.introText} box`}>제 소개를 하겠습니다</p>
-            <p className={`${styles.introText} box`}>잘 봐주세요</p>
-            <p className={`${styles.introText} box`}>시작합니다.</p>
-            <p className={`${styles.introText} box`}>
-              특성화고 외식조리학과 졸업
-            </p>
-            <p className={`${styles.introText} box`}>
-              장안대 게임 컨텐츠학과 졸업
-            </p>
-            <p className={`${styles.introText} box`}>엘리스 AI 트랙 3기 수료</p>
-            <p className={`${styles.introText} box`}>너무 지루한가요?</p>
-            <p className={`${styles.introText} box lastBox`} id="last">
-              핵심만 가보죠
-            </p>
-          </div>
+        <div className={`${styles.textList} listBox`}>
+          <p className={`${styles.introText} box`}>이 웹페이지로</p>
+          <p className={`${styles.introText} box`}>제 소개를 하겠습니다</p>
+          <p className={`${styles.introText} box`}>잘 봐주세요</p>
+          <p className={`${styles.introText} box`}>시작합니다.</p>
+          <p className={`${styles.introText} box`}>
+            특성화고 외식조리학과 졸업
+          </p>
+          <p className={`${styles.introText} box`}>
+            장안대 게임 컨텐츠학과 졸업
+          </p>
+          <p className={`${styles.introText} box`}>엘리스 AI 트랙 3기 수료</p>
+          <p className={`${styles.introText} box`}>너무 지루한가요?</p>
+          <p className={`${styles.introText} box lastBox`} id="last">
+            핵심만 가보죠
+          </p>
         </div>
       </div>
     </>
