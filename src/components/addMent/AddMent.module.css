@@ -21,28 +21,55 @@
 
 .iconBox {
   display: flex;
+  position: relative;
   justify-content: center;
   align-items: center;
   width: 10em;
   height: 10em;
-  /* background-color: bisque; */
   border-radius: 10px;
+  background: white;
+  z-index: 5;
 }
 
-.setBox:nth-child(1) .iconBox:nth-child(1) {
-  background-color: bisque;
+.iconBox::after {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  z-index: -4;
+  filter: blur(20px);
 }
 
-.setBox:nth-child(1) .iconBox:nth-child(2) {
-  background-color: aquamarine;
+.setBox:nth-child(1) .iconBox:nth-child(1)::after {
+  background: linear-gradient(
+    256deg,
+    rgba(183, 246, 255, 1) 0%,
+    rgba(253, 202, 255, 1) 100%
+  );
 }
 
-.setBox:nth-child(2) .iconBox:nth-child(1) {
-  background-color: brown;
+.setBox:nth-child(1) .iconBox:nth-child(2)::after {
+  background: linear-gradient(
+    125deg,
+    rgba(255, 186, 183, 1) 0%,
+    rgba(255, 241, 202, 1) 100%
+  );
 }
-
-.setBox:nth-child(2) .iconBox:nth-child(2) {
-  background-color: coral;
+.setBox:nth-child(2) .iconBox:nth-child(1)::after {
+  background: linear-gradient(
+    90deg,
+    rgba(255, 250, 183, 1) 0%,
+    rgba(213, 255, 202, 1) 100%
+  );
+}
+.setBox:nth-child(2) .iconBox:nth-child(2)::after {
+  background: linear-gradient(
+    0deg,
+    rgba(183, 255, 233, 1) 0%,
+    rgba(255, 202, 204, 1) 100%
+  );
 }
 
 .setBox {
