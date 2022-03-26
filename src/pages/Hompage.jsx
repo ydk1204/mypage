@@ -6,12 +6,12 @@ import History from "../components/history/History";
 
 const Hompage = (props) => {
   return (
-    <>
+    <div>
       <Header />
       <Intro />
       <TextBox />
       <History />
-    </>
+    </div>
   );
 };
 

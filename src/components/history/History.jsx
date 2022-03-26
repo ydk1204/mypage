@@ -39,7 +39,7 @@ const History = (props) => {
   return (
     <>
       <div className={styles.history}>
-        <div className="viewBox">
+        <div className={`${styles.historyBox} viewBox`}>
           <div className={styles.leftFlexContaier}>
             <div className="headerLine">지금까지 왔던 길</div>
             <div className={`${styles.headerFlexRow} `}>
@@ -58,8 +58,8 @@ const History = (props) => {
           <div className={styles.imgContainer}>
             <ImgCard
               img={"./img/fps.jpeg"}
-              top={"3em"}
-              right={"40em"}
+              top={"-3em"}
+              right={"50em"}
               procent={cent}
               rotateNum={100}
               scaleNum={0.7}
@@ -68,8 +68,8 @@ const History = (props) => {
             />
             <ImgCard
               img={"./img/teamRpg.jpeg"}
-              top={"5em"}
-              right={"25em"}
+              top={"2em"}
+              right={"35em"}
               procent={cent}
               rotateNum={70}
               scaleNum={0.8}
@@ -78,8 +78,8 @@ const History = (props) => {
             />
             <ImgCard
               img={"./img/rpg.jpeg"}
-              top={"7em"}
-              right={"5em"}
+              top={"4em"}
+              right={"15em"}
               procent={cent}
               rotateNum={40}
               scaleNum={0.9}
@@ -89,7 +89,7 @@ const History = (props) => {
             <ImgCard
               img={"./img/teamRun.jpeg"}
               top={"9em"}
-              right={"-15em"}
+              right={"-5em"}
               procent={cent}
               rotateNum={30}
               scaleNum={1}

@@ -5,10 +5,11 @@ const AddMent = (props) => {
   useEffect(() => {
     const rootLine = document.querySelector(".Mentbox");
     const headerText = document.querySelector(".headerText");
+    const explanText = document.querySelector(".explan");
 
     const options = {
       root: null,
-      rootMargin: "0px",
+      rootMargin: "-60px 0px 0px 0px",
       threshold: 0,
     };
 
@@ -16,28 +17,6 @@ const AddMent = (props) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
           headerText.classList.add("anim");
-        }
-      });
-    }, options);
-
-    observer.observe(rootLine);
-
-    return;
-  }, []);
-
-  useEffect(() => {
-    const rootLine = document.querySelector(".headerText");
-    const explanText = document.querySelector(".explan");
-
-    const options = {
-      root: null,
-      rootMargin: "0px",
-      threshold: 0,
-    };
-
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
           explanText.classList.add("delayAnim");
         }
       });
@@ -49,7 +28,7 @@ const AddMent = (props) => {
   }, []);
   return (
     <>
-      <div className={styles.container}>
+      <div className={`${styles.container} Mentbox`}>
         <div className={styles.leftBox}>
           <div className={styles.setBox}>
             <div className={styles.iconBox}>
@@ -68,7 +47,7 @@ const AddMent = (props) => {
             </div>
           </div>
         </div>
-        <div className={`${styles.rightBox} Mentbox`}>
+        <div className={`${styles.rightBox}`}>
           <div className={`${styles.headerFlexRow} headerText`}>
             게임 개발 때{" "}
             <span className={styles.textPointColor}>배운 기술</span>

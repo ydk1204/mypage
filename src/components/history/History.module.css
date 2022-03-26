@@ -5,6 +5,10 @@
   background-color: black;
 }
 
+.historyBox {
+  overflow: hidden;
+}
+
 .font {
   color: white;
 }

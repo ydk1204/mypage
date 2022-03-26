@@ -42,6 +42,7 @@ body {
   font-family: "Open Sans", sans-serif;
   margin: 0px;
   cursor: default;
+  overflow-x: hidden;
 }
 
 a {
@@ -99,16 +100,16 @@ p {
 }
 
 .delayAnim {
-  animation: fadeInUp 2.3s ease-in-out;
+  animation: fadeInUp 2.5s ease-in-out;
 }
 
 @keyframes fadeInUp {
-  from {
+  0% {
     opacity: 0;
     transform: translateY(40px);
   }
 
-  to {
+  100% {
     opacity: 1;
     transform: translateY(0);
   }
