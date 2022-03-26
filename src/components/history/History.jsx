@@ -40,19 +40,21 @@ const History = (props) => {
     <>
       <div className={styles.history}>
         <div className={`${styles.historyBox} viewBox`}>
-          <div className={styles.leftFlexContaier}>
-            <div className="headerLine">지금까지 왔던 길</div>
-            <div className={`${styles.headerFlexRow} `}>
-              그 <span className={styles.textPointColor}>마침표.</span>
+          <div className={styles.flexBox}>
+            <div className={styles.leftFlexContaier}>
+              <div className="headerLine">지금까지 왔던 길</div>
+              <div className={`${styles.headerFlexRow} `}>
+                그 <span className={styles.textPointColor}>마침표.</span>
+              </div>
             </div>
-          </div>
-          <div>
-            <div className={styles.rightFlexContaier}>
-              게임 컨텐츠학과에서 게임개발을 배우다
-              <br />
-              웹 개발이라는 새로운 영역에
-              <br />
-              흥미와 관심을 가지게 됐습니다.
+            <div>
+              <div className={styles.rightFlexContaier}>
+                게임 컨텐츠학과에서 게임개발을 배우다
+                <br />
+                웹 개발이라는 새로운 영역에
+                <br />
+                흥미와 관심을 가지게 됐습니다.
+              </div>
             </div>
           </div>
           <div className={styles.imgContainer}>
@@ -62,7 +64,7 @@ const History = (props) => {
               right={"50em"}
               procent={cent}
               rotateNum={100}
-              scaleNum={0.7}
+              scaleNum={1.6}
               xtrans={550}
               ytrans={200}
             />
@@ -72,27 +74,27 @@ const History = (props) => {
               right={"35em"}
               procent={cent}
               rotateNum={70}
-              scaleNum={0.8}
+              scaleNum={1.9}
               xtrans={500}
               ytrans={150}
             />
             <ImgCard
               img={"./img/rpg.jpeg"}
-              top={"4em"}
+              top={"8em"}
               right={"15em"}
               procent={cent}
               rotateNum={40}
-              scaleNum={0.9}
+              scaleNum={2.3}
               xtrans={450}
               ytrans={100}
             />
             <ImgCard
               img={"./img/teamRun.jpeg"}
-              top={"9em"}
+              top={"12em"}
               right={"-5em"}
               procent={cent}
               rotateNum={30}
-              scaleNum={1}
+              scaleNum={2.6}
               xtrans={400}
               ytrans={50}
             />

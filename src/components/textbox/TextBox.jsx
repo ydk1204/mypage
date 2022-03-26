@@ -38,7 +38,7 @@ const TextBox = (props) => {
   return (
     <>
       <div className={styles.videoBackground}>
-        <VideoBackground />
+        <VideoBackground videoSrc={"video/library.mp4"} />
         <div className={`${styles.textList} listBox`}>
           <p className={`${styles.introText} box`}>이 웹페이지로</p>
           <p className={`${styles.introText} box`}>제 소개를 하겠습니다</p>

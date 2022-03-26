@@ -65,6 +65,8 @@ const AddMent = (props) => {
             웹의 구조를 보고 비슷한 것을 만들 수 있다는
             <br />
             기대가 <span className={styles.semiPointColor}>저를 이끌었죠.</span>
+            <br />
+            그리고...
           </div>
         </div>
       </div>

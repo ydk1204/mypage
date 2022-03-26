@@ -15,16 +15,22 @@ const ImgCard = ({
   const [scale, setScale] = useState(1);
   const [xtranslate, setXtranslate] = useState(0);
   const [ytranslate, setYtranslate] = useState(0);
+  const [ztranslate, setZtranslate] = useState(0);
 
   const movings = (procent) => {
+    if (procent < 0) {
+      return;
+    }
     let newRotate = procent * rotateNum;
     setRotate(newRotate);
-    let newScale = procent;
-    setScale(newScale + scaleNum);
+    let newScale = procent * 2;
+    setScale(newScale - scaleNum);
     let newXtranslate = procent * xtrans;
     setXtranslate(newXtranslate);
     let newYtranslate = procent * ytrans;
     setYtranslate(newYtranslate);
+    let newZtranslate = procent * 50;
+    setZtranslate(newZtranslate);
   };
 
   useEffect(() => {
@@ -39,7 +45,9 @@ const ImgCard = ({
         style={{
           top: `${top}`,
           right: `${right}`,
-          transform: `rotate(${rotate}deg) scale(${scale}) translate(-${xtranslate}%, -${ytranslate}%)`,
+          transform: `rotate(${rotate}deg) scale(${Math.abs(
+            scale
+          )}) translate3d(-${xtranslate}%, -${ytranslate}%, ${ztranslate}px)`,
         }}
       >
         <img className={styles.imgs} src={img} alt="img" />

@@ -1,14 +1,14 @@
 import React from "react";
 import styles from "./Video.module.css";
 
-const VideoBackground = () => {
+const VideoBackground = ({ videoSrc }) => {
   return (
     <div className={styles.videoBox}>
       <div className={styles.videoDiv}>
         <video className={styles.video_container} loop autoPlay muted>
           <source
             className={styles.videoSource}
-            src="video/library.mp4"
+            src={videoSrc}
             type="video/mp4"
           />
         </video>

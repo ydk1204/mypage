@@ -3,6 +3,8 @@ import Header from "../components/header/Header";
 import Intro from "../components/intro/Intro";
 import TextBox from "../components/textbox/TextBox";
 import History from "../components/history/History";
+import OpenDoor from "../components/openDoor/OpenDoor";
+import SecondMent from "../components/secondMent/SecondMent";
 
 const Hompage = (props) => {
   return (
@@ -11,6 +13,8 @@ const Hompage = (props) => {
       <Intro />
       <TextBox />
       <History />
+      <OpenDoor />
+      <SecondMent />
     </div>
   );
 };
