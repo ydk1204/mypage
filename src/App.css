@@ -93,3 +93,23 @@ p {
 .active {
   opacity: 1;
 }
+
+.anim {
+  animation: fadeInUp 1.5s ease-in-out;
+}
+
+.delayAnim {
+  animation: fadeInUp 2.3s ease-in-out;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

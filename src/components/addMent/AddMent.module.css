@@ -9,14 +9,58 @@
   flex-direction: column;
   width: 50%;
   height: 100%;
-  padding-right: 5em;
+  padding-right: 7em;
   /* background-color: blueviolet; */
+}
+
+.headerFlexRow {
+  color: white;
+  font-size: var(--font-large);
+  font-weight: var(--weight-bold);
+  margin-bottom: 1em;
+}
+
+.textPointColor {
+  background: rgb(183, 246, 255);
+  background: linear-gradient(
+    90deg,
+    rgba(183, 246, 255, 1) 0%,
+    rgba(67, 5, 255, 1) 100%
+  );
+  background-clip: text;
+  color: transparent;
+}
+
+.gamePointColor {
+  background: rgb(255, 141, 141);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 141, 141, 1) 0%,
+    rgba(255, 135, 163, 1) 47%,
+    rgba(197, 255, 241, 1) 100%
+  );
+  background-clip: text;
+  color: transparent;
+}
+
+.semiPointColor {
+  background: rgb(183, 255, 233);
+  background: linear-gradient(
+    90deg,
+    rgba(183, 255, 233, 1) 0%,
+    rgba(255, 202, 204, 1) 100%
+  );
+  background-clip: text;
+  color: transparent;
 }
 
 .rightBox {
   width: 50%;
   height: 100%;
-  background-color: brown;
+  color: white;
+  font-size: var(--font-medium);
+  font-weight: var(--weight-bold);
+  line-height: 1.5em;
 }
 
 .iconBox {
