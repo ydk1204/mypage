@@ -12,6 +12,10 @@
   /* overflow: hidden; */
 }
 
+.headerText {
+  font-size: var(--font-header);
+}
+
 .leftFlexContaier {
   padding-top: 3em;
   display: flex;

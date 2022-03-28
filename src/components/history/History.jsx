@@ -10,15 +10,16 @@ const History = (props) => {
     const rootLine = document.querySelector(".viewBox");
 
     const moveContents = () => {
-      const recScroll = window.scrollY - rootLine.offsetTop;
-      const procent = recScroll / rootLine.scrollHeight;
+      const recScroll = window.scrollY - (rootLine.offsetTop - 300);
+
+      const procent = recScroll / (rootLine.scrollHeight + 200);
       setCent(procent);
     };
 
     const options = {
       root: null,
-      rootMargin: "0px",
-      threshold: 0,
+      rootMargin: "0px 0px 0px 0px",
+      threshold: 0.2,
     };
 
     const observer = new IntersectionObserver((entries) => {
@@ -42,7 +43,9 @@ const History = (props) => {
         <div className={`${styles.historyBox} viewBox`}>
           <div className={styles.flexBox}>
             <div className={styles.leftFlexContaier}>
-              <div className="headerLine">지금까지 왔던 길</div>
+              <div className={`${styles.headerText} headerLine`}>
+                지금까지 왔던 길
+              </div>
               <div className={`${styles.headerFlexRow} `}>
                 그 <span className={styles.textPointColor}>마침표.</span>
               </div>
@@ -63,30 +66,30 @@ const History = (props) => {
               top={"-3em"}
               right={"50em"}
               procent={cent}
-              rotateNum={100}
+              rotateNum={40}
               scaleNum={1.6}
-              xtrans={550}
-              ytrans={200}
+              xtrans={700}
+              ytrans={240}
             />
             <ImgCard
               img={"./img/teamRpg.jpeg"}
               top={"2em"}
               right={"35em"}
               procent={cent}
-              rotateNum={70}
+              rotateNum={30}
               scaleNum={1.9}
-              xtrans={500}
-              ytrans={150}
+              xtrans={650}
+              ytrans={210}
             />
             <ImgCard
               img={"./img/rpg.jpeg"}
               top={"8em"}
               right={"15em"}
               procent={cent}
-              rotateNum={40}
+              rotateNum={30}
               scaleNum={2.3}
-              xtrans={450}
-              ytrans={100}
+              xtrans={500}
+              ytrans={140}
             />
             <ImgCard
               img={"./img/teamRun.jpeg"}
@@ -95,8 +98,8 @@ const History = (props) => {
               procent={cent}
               rotateNum={30}
               scaleNum={2.6}
-              xtrans={400}
-              ytrans={50}
+              xtrans={450}
+              ytrans={90}
             />
           </div>
         </div>

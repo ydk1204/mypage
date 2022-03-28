@@ -68,7 +68,7 @@ const SecondMent = (props) => {
       <div className={`${styles.container} container`}>
         <div className={styles.flexBox}>
           <div className={styles.leftFlexContaier}>
-            <div className="headerLine">새로운 도전</div>
+            <div className={`${styles.headerText} headerLine`}>새로운 도전</div>
             <div className={`${styles.headerFlexRow} `}>
               그 <span className={`${styles.textPointColor}`}>시작점.</span>
             </div>

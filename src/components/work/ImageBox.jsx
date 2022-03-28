@@ -4,11 +4,10 @@ import styles from "./Work.module.css";
 const ImageBox = ({ Itop, Ileft, Iwidth, Iheight, img }) => {
   useEffect(() => {
     const boxList = document.querySelectorAll(".projectImg");
-    const textList = document.querySelector(".listBox");
 
     const options = {
       root: null,
-      rootMargin: "-400px 0px 0px 0px",
+      rootMargin: "0px 0px 0px 0px",
       threshold: 0,
     };
 
@@ -16,7 +15,6 @@ const ImageBox = ({ Itop, Ileft, Iwidth, Iheight, img }) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
           entry.target.classList.add("projectImage");
-        } else {
         }
       });
     }, options);
@@ -31,8 +29,8 @@ const ImageBox = ({ Itop, Ileft, Iwidth, Iheight, img }) => {
         style={{
           top: `${Itop}%`,
           left: `${Ileft}%`,
-          width: `${Iwidth}em`,
-          height: `${Iheight}em`,
+          width: `${Iwidth}%`,
+          height: `${Iheight}% `,
         }}
       >
         <img className={styles.imgs} src={img} alt="프로젝트 이미지" />

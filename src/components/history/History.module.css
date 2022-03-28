@@ -6,11 +6,15 @@
 }
 
 .historyBox {
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 .font {
   color: white;
+}
+
+.headerText {
+  font-size: var(--font-header);
 }
 
 .flexBox {

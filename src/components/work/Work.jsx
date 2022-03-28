@@ -1,18 +1,38 @@
-import React from "react";
+import React, { useEffect } from "react";
 import styles from "./Work.module.css";
 import ImageBox from "./ImageBox";
 
 const Work = (props) => {
+  useEffect(() => {
+    const workBox = document.querySelector(".workContainer");
+
+    const options = {
+      root: null,
+      rootMargin: "0px",
+      threshold: [0.2],
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          workBox.classList.add("projectBox");
+        }
+      });
+    }, options);
+
+    observer.observe(workBox);
+  }, []);
+
   return (
     <>
-      <div className={styles.container}>
+      <div className={`${styles.container} workContainer`}>
         <div className={styles.flexBox}>
           <div className={styles.flexleft}>
             <ImageBox
               Itop={0}
               Ileft={0}
-              Iwidth={35}
-              Iheight={35}
+              Iwidth={100}
+              Iheight={100}
               img={"../../../../img/Clone.png"}
             />
           </div>
@@ -23,15 +43,15 @@ const Work = (props) => {
             <ImageBox
               Itop={0}
               Ileft={0}
-              Iwidth={50}
-              Iheight={20}
+              Iwidth={100}
+              Iheight={70}
               img={"../../../../img/webPopol.png"}
             />
           </div>
         </div>
         <div className={styles.flexBoxTwo}>
           <div className={styles.flexleftTwo}>
-            <h1 className={styles.Headertext}>
+            <h1 className={styles.worktext}>
               지금까지 배운 스킬을
               <br />
               더 다양하게 사용하고,
@@ -45,8 +65,8 @@ const Work = (props) => {
                 <ImageBox
                   Itop={0}
                   Ileft={0}
-                  Iwidth={15}
-                  Iheight={15}
+                  Iwidth={100}
+                  Iheight={100}
                   img={"../../../../img/maker.png"}
                 />
               </div>
@@ -54,8 +74,8 @@ const Work = (props) => {
                 <ImageBox
                   Itop={0}
                   Ileft={0}
-                  Iwidth={15}
-                  Iheight={15}
+                  Iwidth={100}
+                  Iheight={100}
                   img={"../../../../img/motion.png"}
                 />
               </div>
@@ -66,8 +86,8 @@ const Work = (props) => {
               <ImageBox
                 Itop={0}
                 Ileft={0}
-                Iwidth={35}
-                Iheight={20}
+                Iwidth={100}
+                Iheight={100}
                 img={"../../../../img/purr.jpeg"}
               />
             </div>
@@ -76,8 +96,8 @@ const Work = (props) => {
                 <ImageBox
                   Itop={0}
                   Ileft={0}
-                  Iwidth={15}
-                  Iheight={15}
+                  Iwidth={100}
+                  Iheight={100}
                   img={"../../../../img/ott.png"}
                 />
               </div>
@@ -85,8 +105,8 @@ const Work = (props) => {
                 <ImageBox
                   Itop={0}
                   Ileft={0}
-                  Iwidth={15}
-                  Iheight={15}
+                  Iwidth={100}
+                  Iheight={100}
                   img={"../../../../img/test.png"}
                 />
               </div>

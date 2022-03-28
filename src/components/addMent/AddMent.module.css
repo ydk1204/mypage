@@ -14,6 +14,7 @@
 }
 
 .headerFlexRow {
+  width: 65%;
   color: white;
   font-size: var(--font-large);
   font-weight: var(--weight-bold);
@@ -29,6 +30,10 @@
   );
   background-clip: text;
   color: transparent;
+}
+
+.explanText {
+  width: 65%;
 }
 
 .gamePointColor {
@@ -57,6 +62,9 @@
 .rightBox {
   width: 50%;
   height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   color: white;
   font-size: var(--font-medium);
   font-weight: var(--weight-bold);
@@ -125,4 +133,13 @@
 .icon {
   color: black;
   font-size: var(--font-header);
+}
+
+@media screen and (max-width: 1440px) {
+  .headerFlexRow {
+    width: 100%;
+  }
+  .explanText {
+    width: 100%;
+  }
 }
