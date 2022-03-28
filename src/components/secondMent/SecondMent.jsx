@@ -41,7 +41,6 @@ const SecondMent = (props) => {
     const moveContents = () => {
       const recScroll = window.scrollY - imgBox.offsetTop;
       const procent = recScroll / imgBox.scrollHeight;
-      console.log(procent);
       setSecondCent(procent);
     };
 
@@ -54,10 +53,8 @@ const SecondMent = (props) => {
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
-          // console.log("실행댐");
           window.addEventListener("scroll", moveContents);
         } else {
-          // console.log("해제댐");
           window.removeEventListener("scroll", moveContents);
         }
       });
@@ -173,7 +170,7 @@ const SecondMent = (props) => {
               <div className={styles.imgContainer}>
                 <ImgCard
                   img={"./img/test.png"}
-                  top={"0em"}
+                  top={"-10em"}
                   right={"1em"}
                   procent={secondCent}
                   rotateNum={70}
@@ -183,22 +180,22 @@ const SecondMent = (props) => {
                 />
                 <ImgCard
                   img={"./img/ott.png"}
-                  top={"15em"}
+                  top={"0em"}
                   right={"8em"}
                   procent={secondCent}
                   rotateNum={40}
                   scaleNum={2}
-                  xtrans={50}
+                  xtrans={70}
                   ytrans={400}
                 />
                 <ImgCard
                   img={"./img/purr.jpeg"}
-                  top={"30em"}
+                  top={"20em"}
                   right={"15em"}
                   procent={secondCent}
                   rotateNum={30}
                   scaleNum={2.5}
-                  xtrans={40}
+                  xtrans={70}
                   ytrans={350}
                 />
               </div>

@@ -114,3 +114,11 @@ p {
     transform: translateY(0);
   }
 }
+
+.imageBoxActive {
+  width: 100%;
+}
+
+.projectImage {
+  animation: fadeInUp 1.5s ease-in-out;
+}

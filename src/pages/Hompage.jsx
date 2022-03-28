@@ -5,6 +5,8 @@ import TextBox from "../components/textbox/TextBox";
 import History from "../components/history/History";
 import OpenDoor from "../components/openDoor/OpenDoor";
 import SecondMent from "../components/secondMent/SecondMent";
+import WideImage from "../components/wideImage/WideImage";
+import Work from "../components/work/Work";
 
 const Hompage = (props) => {
   return (
@@ -15,6 +17,8 @@ const Hompage = (props) => {
       <History />
       <OpenDoor />
       <SecondMent />
+      <WideImage />
+      <Work />
     </div>
   );
 };
