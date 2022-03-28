@@ -119,6 +119,10 @@ p {
   width: 100%;
 }
 
+.projectBox {
+  background-color: black;
+}
+
 .projectImage {
   animation: fadeInUp 1.5s ease-in-out;
 }

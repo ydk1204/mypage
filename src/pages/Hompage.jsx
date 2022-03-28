@@ -7,6 +7,7 @@ import OpenDoor from "../components/openDoor/OpenDoor";
 import SecondMent from "../components/secondMent/SecondMent";
 import WideImage from "../components/wideImage/WideImage";
 import Work from "../components/work/Work";
+import Skill from "../components/skills/Skill";
 
 const Hompage = (props) => {
   return (
@@ -19,6 +20,7 @@ const Hompage = (props) => {
       <SecondMent />
       <WideImage />
       <Work />
+      <Skill />
     </div>
   );
 };

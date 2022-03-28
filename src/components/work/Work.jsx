@@ -1,11 +1,32 @@
-import React from "react";
+import React, { useEffect } from "react";
 import styles from "./Work.module.css";
 import ImageBox from "./ImageBox";
 
 const Work = (props) => {
+  useEffect(() => {
+    const workBox = document.querySelector(".workContainer");
+
+    const options = {
+      root: null,
+      rootMargin: "0px",
+      threshold: [0.2],
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          console.log("바껴");
+          workBox.classList.add("projectBox");
+        }
+      });
+    }, options);
+
+    observer.observe(workBox);
+  }, []);
+
   return (
     <>
-      <div className={styles.container}>
+      <div className={`${styles.container} workContainer`}>
         <div className={styles.flexBox}>
           <div className={styles.flexleft}>
             <ImageBox
@@ -31,7 +52,7 @@ const Work = (props) => {
         </div>
         <div className={styles.flexBoxTwo}>
           <div className={styles.flexleftTwo}>
-            <h1 className={styles.Headertext}>
+            <h1 className={styles.worktext}>
               지금까지 배운 스킬을
               <br />
               더 다양하게 사용하고,

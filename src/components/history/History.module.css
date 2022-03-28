@@ -13,6 +13,10 @@
   color: white;
 }
 
+.headerText {
+  font-size: var(--font-header);
+}
+
 .flexBox {
   padding: 0em 11em 0em 10em;
   display: flex;

@@ -42,7 +42,9 @@ const History = (props) => {
         <div className={`${styles.historyBox} viewBox`}>
           <div className={styles.flexBox}>
             <div className={styles.leftFlexContaier}>
-              <div className="headerLine">지금까지 왔던 길</div>
+              <div className={`${styles.headerText} headerLine`}>
+                지금까지 왔던 길
+              </div>
               <div className={`${styles.headerFlexRow} `}>
                 그 <span className={styles.textPointColor}>마침표.</span>
               </div>

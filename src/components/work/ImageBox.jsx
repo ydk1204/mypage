@@ -4,7 +4,6 @@ import styles from "./Work.module.css";
 const ImageBox = ({ Itop, Ileft, Iwidth, Iheight, img }) => {
   useEffect(() => {
     const boxList = document.querySelectorAll(".projectImg");
-    const textList = document.querySelector(".listBox");
 
     const options = {
       root: null,
@@ -16,8 +15,6 @@ const ImageBox = ({ Itop, Ileft, Iwidth, Iheight, img }) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
           entry.target.classList.add("projectImage");
-        } else {
-          // entry.target.classList.add("projectImage");
         }
       });
     }, options);
