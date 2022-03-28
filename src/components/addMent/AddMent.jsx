@@ -50,9 +50,9 @@ const AddMent = (props) => {
         <div className={`${styles.rightBox}`}>
           <div className={`${styles.headerFlexRow} headerText`}>
             게임 개발 때{" "}
-            <span className={styles.textPointColor}>배운 기술</span>
+            <span className={styles.textPointColor}> 배운 기술</span>
           </div>
-          <div className="explan">
+          <div className={`${styles.explanText} explan`}>
             C언어와 C#을 배우고, 유니티 엔진과
             <br />
             언리얼 엔진을 통해{" "}

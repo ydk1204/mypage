@@ -15,7 +15,6 @@ const Work = (props) => {
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
-          console.log("바껴");
           workBox.classList.add("projectBox");
         }
       });
@@ -32,8 +31,8 @@ const Work = (props) => {
             <ImageBox
               Itop={0}
               Ileft={0}
-              Iwidth={35}
-              Iheight={35}
+              Iwidth={100}
+              Iheight={100}
               img={"../../../../img/Clone.png"}
             />
           </div>
@@ -44,8 +43,8 @@ const Work = (props) => {
             <ImageBox
               Itop={0}
               Ileft={0}
-              Iwidth={50}
-              Iheight={20}
+              Iwidth={100}
+              Iheight={70}
               img={"../../../../img/webPopol.png"}
             />
           </div>
@@ -66,8 +65,8 @@ const Work = (props) => {
                 <ImageBox
                   Itop={0}
                   Ileft={0}
-                  Iwidth={15}
-                  Iheight={15}
+                  Iwidth={100}
+                  Iheight={100}
                   img={"../../../../img/maker.png"}
                 />
               </div>
@@ -75,8 +74,8 @@ const Work = (props) => {
                 <ImageBox
                   Itop={0}
                   Ileft={0}
-                  Iwidth={15}
-                  Iheight={15}
+                  Iwidth={100}
+                  Iheight={100}
                   img={"../../../../img/motion.png"}
                 />
               </div>
@@ -87,8 +86,8 @@ const Work = (props) => {
               <ImageBox
                 Itop={0}
                 Ileft={0}
-                Iwidth={35}
-                Iheight={20}
+                Iwidth={100}
+                Iheight={100}
                 img={"../../../../img/purr.jpeg"}
               />
             </div>
@@ -97,8 +96,8 @@ const Work = (props) => {
                 <ImageBox
                   Itop={0}
                   Ileft={0}
-                  Iwidth={15}
-                  Iheight={15}
+                  Iwidth={100}
+                  Iheight={100}
                   img={"../../../../img/ott.png"}
                 />
               </div>
@@ -106,8 +105,8 @@ const Work = (props) => {
                 <ImageBox
                   Itop={0}
                   Ileft={0}
-                  Iwidth={15}
-                  Iheight={15}
+                  Iwidth={100}
+                  Iheight={100}
                   img={"../../../../img/test.png"}
                 />
               </div>

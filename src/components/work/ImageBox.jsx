@@ -7,7 +7,7 @@ const ImageBox = ({ Itop, Ileft, Iwidth, Iheight, img }) => {
 
     const options = {
       root: null,
-      rootMargin: "-400px 0px 0px 0px",
+      rootMargin: "0px 0px 0px 0px",
       threshold: 0,
     };
 
@@ -29,8 +29,8 @@ const ImageBox = ({ Itop, Ileft, Iwidth, Iheight, img }) => {
         style={{
           top: `${Itop}%`,
           left: `${Ileft}%`,
-          width: `${Iwidth}em`,
-          height: `${Iheight}em`,
+          width: `${Iwidth}%`,
+          height: `${Iheight}% `,
         }}
       >
         <img className={styles.imgs} src={img} alt="프로젝트 이미지" />

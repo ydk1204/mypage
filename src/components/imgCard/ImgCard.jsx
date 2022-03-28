@@ -18,7 +18,7 @@ const ImgCard = ({
   const [ztranslate, setZtranslate] = useState(0);
 
   const movings = (procent) => {
-    if (procent < 0) {
+    if (procent < 0 || procent > 1) {
       return;
     }
     let newRotate = procent * rotateNum;

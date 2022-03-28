@@ -7,7 +7,7 @@
 .flexBox {
   width: 100%;
   height: 70vh;
-  padding: 0em 11em 0em 10em;
+  padding: 5em 11em 0em 10em;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -46,7 +46,6 @@
 
 .Headertext {
   color: white;
-  margin-top: 1em;
 }
 
 .worktext {
