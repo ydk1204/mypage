@@ -68,8 +68,8 @@ const History = (props) => {
               procent={cent}
               rotateNum={40}
               scaleNum={1.6}
-              xtrans={1000}
-              ytrans={220}
+              xtrans={700}
+              ytrans={240}
             />
             <ImgCard
               img={"./img/teamRpg.jpeg"}
@@ -78,8 +78,8 @@ const History = (props) => {
               procent={cent}
               rotateNum={30}
               scaleNum={1.9}
-              xtrans={900}
-              ytrans={170}
+              xtrans={650}
+              ytrans={210}
             />
             <ImgCard
               img={"./img/rpg.jpeg"}
@@ -88,8 +88,8 @@ const History = (props) => {
               procent={cent}
               rotateNum={30}
               scaleNum={2.3}
-              xtrans={850}
-              ytrans={120}
+              xtrans={500}
+              ytrans={140}
             />
             <ImgCard
               img={"./img/teamRun.jpeg"}
@@ -98,8 +98,8 @@ const History = (props) => {
               procent={cent}
               rotateNum={30}
               scaleNum={2.6}
-              xtrans={700}
-              ytrans={70}
+              xtrans={450}
+              ytrans={90}
             />
           </div>
         </div>

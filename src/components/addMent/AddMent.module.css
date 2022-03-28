@@ -134,3 +134,12 @@
   color: black;
   font-size: var(--font-header);
 }
+
+@media screen and (max-width: 1440px) {
+  .headerFlexRow {
+    width: 100%;
+  }
+  .explanText {
+    width: 100%;
+  }
+}
