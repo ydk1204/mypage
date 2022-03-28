@@ -17,7 +17,6 @@ const ImageBox = ({ Itop, Ileft, Iwidth, Iheight, img }) => {
         if (entry.isIntersecting) {
           entry.target.classList.add("projectImage");
         } else {
-          // entry.target.classList.add("projectImage");
         }
       });
     }, options);
