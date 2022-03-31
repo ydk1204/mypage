@@ -49,8 +49,11 @@ const Contact = (props) => {
           <div className={styles.infoBox}>
             JustChat! :
             <span>
-              <a className={styles.contact__link} href="#">
-                링크
+              <a
+                className={styles.contact__link}
+                href="https://dangdang-bf6c7.web.app/"
+              >
+                https://dangdang-bf6c7.web.app/
               </a>{" "}
             </span>
           </div>

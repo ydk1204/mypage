@@ -20,7 +20,6 @@ const TextBox = (props) => {
           entry.target.style.opacity = 1;
           entry.target.style.transform = `scale(1.1)`;
           if (entry.target.id === "last") {
-            // console.log(textList);
             textList.style.background = `rgba(0, 0, 0, 1)`;
           } else {
             textList.style.background = `rgba(0, 0, 0, 0.5)`;

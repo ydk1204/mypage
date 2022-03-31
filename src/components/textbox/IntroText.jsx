@@ -6,7 +6,6 @@ const IntroText = ({ opcityNum, text }) => {
 
   useEffect(() => {
     const scrollCheck = () => {
-      console.log(((window.scrollY - opcityNum) / opcityNum) * 1);
       setTextOpacity(((window.scrollY - opcityNum) / opcityNum) * 1);
     };
 

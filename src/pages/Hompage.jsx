@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import Header from "../components/header/Header";
 import Intro from "../components/intro/Intro";
 import TextBox from "../components/textbox/TextBox";
@@ -11,20 +11,42 @@ import Skill from "../components/skills/Skill";
 import Contact from "../components/contact/Contact";
 
 const Hompage = (props) => {
-  useEffect(() => {}, []);
+  const introRef = useRef();
+  const projectRef = useRef();
+  const skillRef = useRef();
+  const contactRef = useRef();
+  const [divLocation, setDivLocation] = useState([]);
+
+  useEffect(() => {
+    let intro = introRef.current.offsetTop;
+    let project = projectRef.current.offsetTop;
+    let skills = skillRef.current.offsetTop;
+    let contact = contactRef.current.offsetTop;
+    setDivLocation([...divLocation, intro, project, skills, contact]);
+  }, [contactRef]);
 
   return (
     <div>
-      <Header />
-      <Intro />
+      <Header divLocation={divLocation} />
+      <div ref={introRef}>
+        <Intro />
+      </div>
+
       <TextBox />
       <History />
       <OpenDoor />
-      <SecondMent />
+      <div ref={projectRef}>
+        <SecondMent />
+      </div>
+
       <WideImage />
       <Work />
-      <Skill />
-      <Contact />
+      <div ref={skillRef}>
+        <Skill />
+      </div>
+      <div ref={contactRef}>
+        <Contact />
+      </div>
     </div>
   );
 };

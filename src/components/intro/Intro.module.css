@@ -19,7 +19,32 @@
   width: 100%;
   text-align: center;
   color: white;
-  font-size: var(--font-header);
+  font-size: 6em;
+}
+
+.intro_btn {
+  position: absolute;
+  z-index: 2;
+  top: 80%;
+  left: 45%;
+  width: 10%;
+  padding: 0.3em;
+  font-size: 1.7em;
+  border-radius: 0.5em;
+  text-align: center;
+  color: white;
+  font-weight: 800;
+  background: rgb(88, 210, 255);
+  background: linear-gradient(294deg, rgba(88, 210, 255, 1) 0%, rgba(255, 195, 195, 1) 58%);
+  
+}
+
+.intro_btn__a {
+  transition: all 0.3s ease-in-out;
+}
+
+.intro_btn:hover .intro_btn__a {
+  color: black;
 }
 
 .intro_container::after {
